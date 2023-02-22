@@ -5,6 +5,8 @@
   align-items: center;
   padding: 6rem;
   min-height: 100vh;
+  background: rgb(0,0,0);
+  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(25,114,201,0.4) 100%);
 }
 
 .description {
@@ -39,11 +41,46 @@
   font-family: var(--font-mono);
 }
 
+.name:hover {
+  color: teal;
+}
+
 .grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(25%, auto));
+  grid-template-columns: repeat(5, minmax(20%, auto));
   width: var(--max-width);
   max-width: 100%;
+  font-family: sans-serif;
+  font-size: 1em;
+  color: rgb(178, 178, 178);
+}
+
+.grid > :nth-child(6) {
+  display: none;
+}
+
+.infoCont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid p {
+  font-weight: 800;
+  font-size: 1.25em;
+  padding-bottom: 0.5rem;
+  color: rgb(205, 205, 205);
+}
+
+.day {
+  font-size: 1.5em;
+  color: white;
+}
+
+
+.grid div {
+  text-align: center;
 }
 
 .card {
@@ -81,7 +118,7 @@
 }
 
 .center::before {
-  background: var(--secondary-glow);
+
   border-radius: 50%;
   width: 480px;
   height: 360px;
@@ -89,7 +126,7 @@
 }
 
 .center::after {
-  background: var(--primary-glow);
+
   width: 240px;
   height: 180px;
   z-index: -1;
