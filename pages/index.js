@@ -109,9 +109,10 @@ export default function Home() {
     // if(grabWeather.current === true) {
     //   fetchWeather();
     // }
-    return () => {
-      grabWeather.current = true;
-    }
+    // return () => {
+    //   grabWeather.current = true;
+    // }
+    fetchWeather()
   }, [])
 
   const current = new Date();
