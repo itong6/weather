@@ -6,7 +6,7 @@
   padding: 6rem;
   min-height: 100vh;
   background: rgb(0,0,0);
-  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(25,114,201,0.4) 100%);
+  background: linear-gradient(0deg, rgb(1, 5, 40) 0%, rgba(17, 119, 222, 0.4) 60%);
 }
 
 .description {
@@ -311,5 +311,11 @@
   }
   to {
     transform: rotate(0deg);
+  }
+}
+
+@media (max-width: 1120px) {
+  .grid div {
+    margin-bottom: 2rem;
   }
 }
