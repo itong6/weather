@@ -95,7 +95,7 @@ export default function Home() {
              <p>
               <span className={styles.day}>{day}</span><br/> {month} {weather.dt_txt.substr(8,2)}, {weather.dt_txt.substr(0,4)}
              </p>
-             <span>{weather.main.temp.toFixed(1)} °C</span>
+             <span>{weather.main.temp.toFixed(1)}°C</span>
              <div>{weather.weather[0].main}</div>
           </div>
         )
